@@ -69,8 +69,7 @@ long process_fd(int fd, const char *filename, const char *pattern,
                 line_cap = new_cap;
             }
             
-            line_buf[line_len++] = c;
-            
+            line_buf[line_len++] = c;             
             // 遇到换行符，处理这一行
             if (c == '\n') {
                 line_num++;
